@@ -19,9 +19,9 @@ namespace eComBid_Web
                         "~/Scripts/jquery-migrate-1.2.1.min.js",
                         "~/Scripts/jquery.unobtrusive*",
                         "~/Scripts/jquery.validate*"));
-
-            bundles.Add(new ScriptBundle("~/bundles/bootstrapjs").Include(
+ bundles.Add(new ScriptBundle("~/bundles/bootstrapjs").Include(
                         "~/bootstrap/js/bootstrap.min.js"));
+           
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryplugins").Include(
 
@@ -41,7 +41,8 @@ namespace eComBid_Web
                         "~/assets/js/util.js",
                         "~/assets/js/main.js"
                        ));
-
+ bundles.Add(new ScriptBundle("~/bundles/iCheckjs").Include(
+                        "~/plugins/iCheck/icheck.min.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -56,7 +57,8 @@ namespace eComBid_Web
             bundles.Add(new StyleBundle("~/bundles/basicstyles").Include(
                    "~/bootstrap/css/bootstrap.min.css",
                    "~/dist/css/AdminLTE.min.css",
-                   "~/dist/css/skins/_all-skins.min.css"
+                   "~/dist/css/skins/_all-skins.min.css",
+                   "~/dist/css/Custom.css"
                    ));
 
             bundles.Add(new StyleBundle("~/bundles/pluginstyles").Include(
@@ -72,6 +74,11 @@ namespace eComBid_Web
             bundles.Add(new StyleBundle("~/bundles/homepagecss").Include(
                          "~/assets/css/main.css"
                          ));
+
+            bundles.Add(new StyleBundle("~/bundles/iCheckcss").Include(
+                "~/plugins/iCheck/square/blue.css"
+                ));
+
             #endregion
         }
     }
