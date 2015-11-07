@@ -1,0 +1,4 @@
+[submodule "eComBid-API"]
+	path = eComBid-API
+	url = https://nishrathi@github.com/Reliable-Technology/eComBid-API.git
+	branch = dev
